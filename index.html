@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body onload="slider()">
+    <div class="header">
+        <div class="slider">
+            <img src="images/image1.jpg" id="slideImg">
+        </div>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="120px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Equipment</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="account">
+                    <img src="images/gear.png" class="account-icon"><a href="#">Account</a>
+                </div>
+            </div>
+            <div class="side-bar">
+                <p>Follow us</p>
+                <div class="social-links">
+                    <img src="images/ig.png">
+                    <img src="images/tw.png">
+                </div>
+            </div>
+            <div class="content">
+                <h2>A HIKING GUIDE</h2>
+                <h1>Be Prepared For The<br>Mountains And Beyond!</h1>
+                <p class="btn">scroll down &#8595;</p>
+            </div>
+        </div>
+        <div class="controller">
+            <ul>
+                <li class="active">Start</li>
+                <li><a href="#level-1">01</a></li>
+                <li><a href="#level-2">02</a></li>
+                <li><a href="#level-3">03</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub-container">
+    <section id="level-1">
+        <div class="row">
+            <div class="col-1">
+                <h1 class="blur">01</h1>
+                <div class="description">
+                    <h2>GET STARTED</h2>
+                    <h1 class="title">What level of hiker<br>are you?</h1>
+                    <p>Determining what level of hiker you are can be an
+                        important tool when planning future hikes. This hiking level guide will help
+                        you plan hikes according to different hike ratings set by various websites like All Traits
+                        and Modern Hiker. What type of hiker are you - novice, moderate, advanced mderate,
+                        expert, or expert backpacker?</p>
+                    <br>
+                    <a href="page1.html" class="link">read more &#8594;</a>
+                </div>
+            </div>
+            <div class="col-1 picture-1">
+                <img src="images/image-1.jpg" height="450px" width="200px">
+            </div>
+        </div>
+    </section>
+    <section id="level-2">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/image-2.jpg" height="450px" width="200px">
+            </div>
+            <div class="col-2">
+                <h1 class="blur-2">02</h1>
+                <div class="description-2">
+                    <h2>HIKING ESSENTIALS</h2>
+                    <h1 class="title-2">Picking the right<br>Hiking Gear!</h1>
+                    <p>The nice thing about beginning hiking is that you don't really need any special gear, you can probably get away with things you already
+                    have. Let's start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe
+                    wif they get sweaty or wet.</p>
+                    <br>
+                    <a href="page2.html" class="link">read more &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="level-3">
+        <div class="row">
+            <div class="col-3">
+                <h1 class="blur-3">03</h1>
+                <div class="description-3">
+                    <h2>WHERE YOU GO IS THE KEY</h2>
+                    <h1 class="title-3">Understand Your<br> Map & Timing</h1>
+                    <p>To start, print out the hiking guide and map. if it's raining, throw them in a
+                    Zip-Lock bag. Read over the guide, study the map, and have a good idea
+                    of what to expect. I like to know what my next landmark is as I hike. For
+                    example, I'll read the guide and know that say, in a mile, I make a right turn
+                    at the junction.</p>
+                    <br>
+                    <a href="page3.html" class="link">read more &#8594;</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="images/image-3.jpg" height="450px" width="300px">
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="footer">
+        <div class="sub-container column">
+            <div class="col-footer">
+                <img src="Images/logo-white.png" width="120px">
+                <p>Get out there & discover your next<br>slope, mountain and destination!</p>
+            </div>
+            <div class="col-footer">
+                <h3>More on The Blog</h3>
+                <ul>
+                    <li><a href="#">About Calm & Hike</a></li>
+                    <li><a href="#">Contribution & Writers</a></li>
+                    <li><a href="#">Write For Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-footer">
+                <h3>More on Calm & Hike</h3>
+                <ul>
+                    <li><a href="#">The Team</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        //var Slide = document.getElementById("Slide");
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array (
+            "images/image1.jpg",
+            "images/image2.jpg",
+            "images/image3.jpg",
+            "images/image4.jpg",
+            "images/image5.jpg",
+            "images/image6.jpg",
+        );
+
+        var len = images.length;
+        var i = 0;
+
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout(slider,3000);
+        }
+
+
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	         speed: 1000,
+	         speedAsDuration: true
+       });
+    </script>
+</body>
+
+</html>
